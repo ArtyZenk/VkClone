@@ -8,12 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var profileImage: UIImageView!
+    @IBOutlet var editButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        profileImage.layer.cornerRadius = profileImage.frame.width / 2
+        editButton.layer.cornerRadius = 10
     }
-
-
 }
 
